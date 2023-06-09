@@ -1,18 +1,22 @@
 html {
     height: 100%;
-    background-image: conic-gradient(from 90deg, red, yellow, green, blue, red );
+    background-image: conic-gradient(from 90deg, red, green, blue, red );
     opacity: 0.95;
     padding: 5px;
     box-sizing: border-box;
     position: relative;
+    flex-shrink: 0;
 }
+.content {
+    flex: 1;
+  }
 button {
-    font-size: 15px;
+    font-size: 18px;
     background-color: green;
     border-radius: 8px;
     font-weight: 600;
-    width: 180px;
-    height: 40px;
+    width: 220px;
+    height: 50px;
     margin-left: 20px;
 }
 button:hover {
@@ -109,9 +113,8 @@ footer {
     border-color: black;
     color: blue;
     text-shadow: 1px 1px 3px white, -1px -1px 3px white;
-    position: fixed;
-    bottom: 0px;
     width: 100%;
+    flex-shrink: 0;
 }
 table {
     margin-top: 15px;
@@ -158,3 +161,112 @@ a:hover {
     padding: 20px;
     margin-left: 40px;
 }
+@media only screen and (max-width: 500px) {
+  
+    html {
+        height: 100%;
+        background-image: conic-gradient(from 90deg, red, green, blue, red );
+        opacity: 0.95;
+        padding: 5px;
+        box-sizing: border-box;
+        position: relative;
+        background-size: cover;
+        background-attachment: fixed; 
+        flex-shrink: 0;
+    }
+    button {
+        font-size: 20px;
+        background-color: green;
+        border-radius: 8px;
+        font-weight: 600;
+        width: 180px;
+        height: 40px;
+        margin-left: 10px;
+    }
+    button:hover {
+        font-size: 20px;
+    }
+    @keyframes example3 {
+        from {
+          padding-left: 0px;
+        }
+        to {
+          padding-left: 20px;
+        }
+        from {
+          background-color: #6ee533;
+        }
+        to {
+          background-color: #121aa7;
+        }
+        from {
+          color: #121aa7;
+        }
+        to {
+          color:  #6ee533;
+        }
+        from {
+          box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.6), 6px 6px 6px ;
+        }
+        to {
+          box-shadow: 4px 4px 6px  #6ee533, 5px 5px 25px;
+        }
+    }
+    
+    h1 {
+        font-size: 20px;
+
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 15px;
+        display: inline-block;
+        text-align: left;
+        margin: 10px;
+        padding: 0px;
+        color: gainsboro;
+    }
+    form {
+        width: 300px;
+        margin: 10px auto;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: black;
+    }
+    input,
+    select {
+        width: 100%;
+        padding: 5px;
+    }
+    footer {
+        text-align: center;  
+        font-size: 15px;
+        flex-shrink: 0;
+    }
+    table {
+
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    th, td {
+        padding: 8px;
+    }
+    
+    
+    #other_hobby_input {
+        width: 60%;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    #go_back {
+        padding: 5px;
+        margin-left: 5px;
+    }
+  }

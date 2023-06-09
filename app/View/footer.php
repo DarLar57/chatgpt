@@ -1,3 +1,4 @@
+</div>
 <footer>
   <p>ChatGPT API (yet static - under way - static)</p>
 </footer>

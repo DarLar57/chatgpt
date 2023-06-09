@@ -7,12 +7,12 @@ include __DIR__ . '/app/initialize.php';
 
 ?>
 <body>
+    <div class="content">
     <h1>Gifts proposal</h1>
-    <h2>with ChatGPT API</h2>
-    <h2>(yet static - under way)</h2>
+    <h2>with ChatGPT API (yet static - under way)</h2>
 
 <!-- change 'action' into action="gifts_from_chatgpt.php" -->
-    <form action="generate_gifts.php" method="post">
+    <form action="app/View/generate_gifts.php" method="post">
         <label for="sex">Sex:</label>
         <select name="sex" id="sex" required>
             <option value="unisex">Unisex</option>
