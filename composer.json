@@ -1,0 +1,14 @@
+{
+    "name": "darlar57/telemedi",
+    "description": "ChatDPT-Telemedi",
+    "authors": [
+        {
+            "name": "Dariusz Larsen"
+        }],
+    "autoload": {
+        "psr-4": {
+            "Model\\": "app/Model",
+            "Controller\\":  "app/Controller"
+        }
+    }
+}
